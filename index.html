@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Website bán hàng</title>
+</head>
+<body >
+<!--strat header-->
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 height-header-top">
+                    <span class="email icon-mn"><i class="fas fa-envelope"></i>Email: duongth52@wru.vn</span>
+                    <span class="phone icon-mn"><i class="fas fa-phone"></i>Phone: 0978.019.699</span>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 height-header-top">
+                    <ul class="menu-fast">
+                        <li class="active"><a href="#"><i class="fas fa-user"></i>Tài khoản</a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i>Yêu thích</a></li>
+                        <li><a href="#"><i class="fas fa-euro-sign"></i>Thanh toán</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i>Đăng ký</a></li>
+                        <li><a href="#"><i class="fas fa-user"></i>Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-middle">
+        <div class="container " style="display: block">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-12 logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-4 col-xs-12 form-search" >
+                    <div class="input-group"  >
+                    <input type="text" class="form-control" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="btn btn-default" type="button"><i class="fas fa-search"></i></button>
+
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="shopping-cart">
+                        <img src="images/shopping-cart.png" alt="">
+                        <div class="count-cart">
+                            <p>Giỏ hàng</p>
+                            <p>(<span>0</span>)sp - (<span>0</span>)vnđ</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 hidden-xs height-mn">
+                    <div class="item-menu-left">
+                        <h2 class="title-dm"><a href="#">Danh mục sản phẩm</a></h2>
+                        <div class="menu-left">
+                            <ul>
+                                <li><a href="#">Đệm cao su</a></li>
+                                <li><a href="#">Đệm lò xo</a></li>
+                                <li><a href="#">Đệm bông ép</a></li>
+                                <li><a href="#">Đệm sơ dừa</a></li>
+                                <li><a href="#">Drap, mềm, gối</a></li>
+                                <li><a href="#">Đệm khách sạn</a></li>
+                                <li><a href="#">Đệm lông vũ Doona</a></li>
+                                <li><a href="#">Đệm PE</a></li>
+                                <li><a href="#">Chăn ga gôi nhập khẩu từ Mỹ</a></li>
+                                <li><a href="#">Chăn ga gối đệm Hàn Quốc</a></li>
+                                <li><a href="#">Quà tặng</a></li>
+                                <li><a href="#">Sản phẩm khác</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 hidden-xs height-mn top-mn">
+                    <div class="menu-top">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Tư vấn chọn mua</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Thanh toán</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--slide quảng cáo-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 offset-md-3">
+            <div class="box-qc">
+                <div class="row">
+                    <div class="col-md-9 pad-r-0">
+                        <img  class="img-sl" src="images/slider1.jpg" alt="">
+                    </div>
+                    <div class="col-md-3 pad-l-10">
+                        <div class="qc-home">
+                            <img class="img-qc" src="images/slider2.png" alt="">
+                        </div>
+                        <div class="qc-home">
+                            <img class="img-qc" src="images/slider2.png" alt="">
+                        </div>
+                        <div class="qc-home-last ">
+                            <img  class="img-qc" src="images/slider2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end slide quảng cáo-->
+<div class="c30"></div>
+<!--sản phẩm nổi bật-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="quangcao">
+                <a href="">
+                    <img class="width-100" src="images/nb1.png" alt="">
+                </a>
+            </div>
+
+            <div class="box-product product-left">
+                <h2 class="title-pro"><span>Sản phẩm</span> Bán chạy</h2>
+                <div class="c10"></div>
+                <ul class="product-left-ul">
+                    <li>
+                        <a class="img-left-pro" href="">
+                            <img src="images/spnbl.png" alt="">
+                        </a>
+                        <h3>
+                            <a href="">Nệm gòn ép Hàn Quốc cao 20cm Vải Gấm Lụa</a>
+                        </h3>
+                        <div class="price  price-new">
+                            <span>4,500,000</span>
+                        </div>
+                        <p class="star">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a class="img-left-pro" href="">
+                            <img src="images/spnbl.png" alt="">
+                        </a>
+                        <h3>
+                            <a href="">Nệm gòn ép Hàn Quốc cao 20cm Vải Gấm Lụa</a>
+                        </h3>
+                        <div class="price  price-new">
+                            <span>4,500,000</span>
+                        </div>
+                        <p class="star">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </p>
+                    </li>
+                    <li>
+                        <a class="img-left-pro" href="">
+                            <img src="images/spnbl.png" alt="">
+                        </a>
+                        <h3>
+                            <a href="">Nệm gòn ép Hàn Quốc cao 20cm Vải Gấm Lụa</a>
+                        </h3>
+                        <div class="price  price-new">
+                            <span>4,500,000</span>
+                        </div>
+                        <p class="star">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+           <!-- đăng ký nhận tin-->
+            <div class="box-product product-left">
+                <h2 class="title-pro"><span>Đăng ký</span> Nhận tin</h2>
+               <!-- <div class="c10"></div>-->
+                <p class="mar-t-15" style="text-align: justify">
+                    Bạn vui lòng nhập địa chỉ email vào form bên dưới để nhận được các thông tin khuyến mãi từ chúng tôi....
+                </p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email của bạn ...." a>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary register" type="button"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="c15"></div>
+            <!--tin tưc sự kiện-->
+            <div class="box-product product-left">
+                <h2 class="title-pro"><span>Tin tức</span> Sự kiện</h2>
+                <div class="c20"></div>
+                <ul class="item-new-ul">
+                    <li>
+                        <a class="img-news" href="">
+                            <img class="width-100" src="images/Sukien1.png" alt="">
+                            <span class="date">
+                                <span>T6</span>
+                                <span>15</span>
+                            </span>
+                        </a>
+                        <h3>
+                            <a href="">Phòng ngủ mát mẻ với Chăn Drap Gối tone lạnh</a>
+                        </h3>
+                        <div class="description-news">
+                            <p class="mar-b-10">Thay vì sử dụng chăn drap gối màu đơn sắc như thông thường, hãy chuyển sang xu hướng in hoa để biến phòng ngủ của bạn trở thành không gian vừa sành điệu vừa...</p>
+
+                        </div>
+                        <p class="watch-more">
+                            <a href="">+Xem tiếp</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a class="img-news" href="">
+                            <img class="width-100" src="images/Sukien1.png" alt="">
+                            <span class="date">
+                                <span>T6 </span>
+                                <span>15 </span>
+                            </span>
+                        </a>
+                        <h3>
+                            <a href="">Phòng ngủ mát mẻ với Chăn Drap Gối tone lạnh</a>
+                        </h3>
+                        <div class="description-news">
+                            <p class="mar-b-10">Thay vì sử dụng chăn drap gối màu đơn sắc như thông thường, hãy chuyển sang xu hướng in hoa để biến phòng ngủ của bạn trở thành không gian vừa sành điệu vừa...</p>
+                        </div>
+                        <p class="watch-more">
+                            <a href="">+Xem tiếp</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="box-product">
+                <h2 class="title-pro"><span>Sản phẩm</span> nổi bật</h2>
+                <div class="c20"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="product-item">
+                            <a href="" class="img-pro">
+                                <img  src="images/spnb1.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                        <div class="product-item">
+                            <a href="" class="img-pro" >
+                                <img  src="images/spnb2.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="product-item">
+                            <a href="" class="img-pro">
+                                <img  src="images/spnb3.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20"></div>
+            <div class="box-product">
+                <h2 class="title-pro"><span>Nệm</span> cao su</h2>
+                <div class="c20"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="product-item">
+                            <a href="" class="img-pro">
+                                <img  src="images/spnb1.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                        <div class="product-item">
+                            <a href="" class="img-pro" >
+                                <img  src="images/spnb2.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="product-item">
+                            <a href="" class="img-pro">
+                                <img  src="images/spnb3.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c30"></div>
+            <div class="row">
+                <div class="col-md-7 pad-r-0" >
+                    <img class="width-100" src="images/sale.jpg" alt="">
+                </div>
+                <div class="col-md-5">
+                    <img class="width-100" src="images/sale50.jpg" alt="">
+                </div>
+            </div>
+            <div class="c20"></div>
+            <div class="box-product">
+                <h2 class="title-pro"><span>Nệm</span> LÒ XO</h2>
+                <div class="c20"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="product-item">
+                            <a href="" class="img-pro">
+                                <img  src="images/spnb1.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                        <div class="product-item">
+                            <a href="" class="img-pro" >
+                                <img  src="images/spnb2.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="product-item">
+                            <a href="" class="img-pro">
+                                <img  src="images/spnb3.png" alt="">
+                            </a>
+                            <h3><a href="">ĐỆM LÒ XO DUNLOPILLO SPRING VENUS ....</a></h3>
+                            <p class="star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p class="price">5,888,000 VNĐ</p>
+                            <div class="btn-group">
+                                <a href="" class="btn-shopping-cart"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                <a href="" class="btn-heart"><i class="fas fa-heart"></i></a>
+                                <a href="" class="btn-retweet"><i class="fas fa-retweet"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c30"></div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="customer-title mar-0"><span>khách hàng</span></h2>
+            <div class="brand">
+                <div class="item">
+                    <a href="/"><img src="images/kh5.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="/"><img src="images/kh4.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="/"><img src="images/kh3.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="/"><img src="images/kh2.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="/"><img src="images/kh1.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end sản phẩm nổi bật-->
+<div class="c30"></div>
+<footer>
+    <div class="footer-top " >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <span class="phone-ft"><i class="fas fa-envelope"></i>Email: duongth52@wru.vn</span>
+                    <span class="phone-ft"><i class="fas fa-phone"></i>Phone: 0978.019.699</span>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="register-ft">
+                        <span>Đăng ký nhận tin</span>
+                        <div class="input-group customer-ipgroup">
+                            <input type="text" class="form-control" placeholder="Nhập địa chỉ email ...">
+                            <button class="btn btn-outline-secondary customer-btn" type="button">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-midd clearfix">
+        <div class="container">
+            <ul class="list-item-ft">
+                <li>
+                    <h2 class="title-ft">Về chúng tôi</h2>
+                    <div class="link">
+                        <a href="">Giới thiệu</a>
+                        <a href="">Chính sách bán hàng</a>
+                        <a href="">Chính sách đổi trả hàng</a>
+                        <a href="">Bản đồ đường đi</a>
+                        <a href="">Liên hệ</a>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="title-ft">Hỗ trợ khách hàng</h2>
+                    <div class="link">
+                        <a href="">Liên hệ</a>
+                        <a href="">Mua hàng từ xa</a>
+                        <a href="">Chính sách bảo hành</a>
+                        <a href="">Chính sách trả góp</a>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="title-ft">Tài khoản</h2>
+                    <div class="link">
+                        <a href="">Đăng nhập/Đăng ký</a>
+                        <a href="">Giỏ hàng</a>
+                        <a href="">Thêm sản phẩm</a>
+                        <a href="">Thanh toán</a>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="title-ft">Nệm chính hãng</h2>
+                    <div class="link">
+                        <a href="">Nệm lò xo</a>
+                        <a href="">Nệm cao su</a>
+                        <a href="">Nệm bông ép</a>
+                        <a href="">Nệm lông vũ</a>
+                        <a href="">Drap, mềm, gối, ...</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6"></div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

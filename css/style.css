@@ -1,0 +1,515 @@
+
+@font-face {
+    font-family: 'UVNHongHaHep';
+    src: url('../fonts/UVNHongHaHep.TTF');
+}
+@font-face {
+    font-family: 'UVNHongHa_B';
+    src: url('../fonts/UVNHongHa_B.TTF');
+}
+
+a:hover{
+    text-decoration: none;
+
+}
+
+.c30{
+    height: 30px;
+}
+.c20{
+    height: 20px;
+}
+.c10{
+    height: 10px;
+}
+.c15{
+    height: 15px;
+}
+.pad-r-4{
+    padding-right:5px ;
+}
+.pad-l-10{
+    padding-left: 10px;
+}
+.pad-r-0{
+    padding-right: 0px;
+}
+.mar-t-15{
+    margin-top: 15px;
+}
+.mar-0{
+    margin: 0px;
+}
+.mar-b-10{
+    margin-bottom: 10px;
+}
+.width-100{
+    width: 100%;
+}
+body{
+    font-family: UVNHongHaHep;
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+}
+.header-top{
+    background: #eeeeee ;
+    height: 35px;
+    line-height: 35px;
+}
+.height-header-top{
+    height: 35px;
+}
+.email{
+    margin-right: 38px;
+}
+.icon-mn i{
+    padding: 7px 7px;
+    background: #f96a6e;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.menu-fast{
+    margin-bottom: 0px;
+}
+.menu-fast li{
+    display: inline-block;
+}
+.menu-fast li a{
+    color: #999999;
+    padding: 0px 9px;
+    font-family: OpenSans-Light;
+    font-size: 12px ;
+    border-left: 1px solid #999999;
+}
+.menu-fast li a i{
+    margin-right: 10px;
+}
+
+/*================================header-middle*/
+.header-middle{
+    height: 120px;
+}
+.logo a{
+    display: block;
+    line-height: 120px;
+}
+.form-search .input-group{
+    margin: 40px 0;
+}
+.form-search .input-group input{
+    border: 1px solid #f96a6e;
+    height: 40px;
+    border-radius: unset;
+}
+
+.form-search .input-group button{
+    background: #f96a6e;
+    border: 1px solid #f96a6e;
+    border-radius: unset;
+    color: #FFFFFF;
+    height: 40px;
+}
+.shopping-cart{
+    display: flex;
+    float: left;
+    margin: 40px 0
+}
+.shopping-cart img{
+    margin-right: 16px;
+}
+.shopping-cart p{
+    font-family: UVNHongHaHep;
+    font-size: 14px;
+}
+.count-cart p{
+    margin: 0px;
+}
+/*===============================header-botton*/
+.header-bottom{
+    background: #f96a6e;
+   /* height: 45px;*/
+}
+.header-bottom a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.height-mn{
+    height: 45px;
+}
+
+.title-dm{
+    font-family: UVNHongHa_B;
+    background: #f85256;
+/*    height: 45px;*/
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 0px;
+}
+.menu-top ul{
+    line-height: 45px;
+  /*  padding: 0px 15px;*/
+    margin: 0px;
+}
+.menu-top ul li{
+    display: inline-block;
+}
+
+.menu-top ul li a{
+    display: block;
+    font-family: UVNHongHaHep;
+    font-size: 16px;
+    padding: 0px 25px;
+}
+.top-mn{
+    padding: 0px;
+}
+.menu-top ul li:hover a{
+    background: #FFFFFF;
+    color: #f96a6e;
+}
+/*==========================================Slide*/
+
+.box-qc{
+    padding-top: 30px;
+}
+
+.img-sl{
+    width: 100%;
+    height: 415px;
+}
+.img-qc{
+    width: 100%;
+    height: 131px;
+}
+
+.qc-home{
+    margin-bottom: 11px;
+
+}
+
+/*========================================menu left*/
+.item-menu-left{
+    position: relative;
+}
+.menu-left{
+    position: absolute;
+    width: 100%;
+}
+.menu-left ul{
+    border: 1px solid #CCCCCC;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-left ul li{
+    display: block;
+}
+.menu-left ul li:last-child a{
+    border: none;
+}
+.menu-left ul li a{
+    text-transform: none;
+    line-height: 36px;
+    padding: 0px 19px;
+    display: block;
+    color: #000;
+    font-family: UVNHongHaHep;
+    font-size: 14px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/*===========================================sản phẩm nổi bật*/
+.title-pro{
+    padding: 11px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: UVNHongHa_B;
+    margin: 0px;
+}
+.title-pro span{
+    color: #f96a6e;
+}
+
+.product-item a.img-pro{
+    display: block;
+    height: 290px;
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(232,232,232,1);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(232,232,232,1);
+    box-shadow: 0px 0px 5px 4px rgba(232,232,232,1);
+}
+.product-item a.img-pro img{
+    width: 100%;
+    height: 100%;
+}
+.product-item h3{
+    font-family: UVNHongHaHep;
+    font-size: 14px;
+    margin-top: 21px;
+}
+
+.product-item h3 a{
+    color: #999999;
+/*    margin-bottom: 6px;*/
+}
+.product-item h3 a:hover{
+    color: #f85256;
+}
+.btn-group a{
+    padding: 5px;
+    display: block;
+    border: 1px solid #f0f0f0;
+    transition: all .20s;
+}
+.btn-group a:hover{
+    background: #FFFFFF;
+    color: #f85256;
+}
+.btn-shopping-cart{
+    background: #999999;
+    color: white;
+}
+.btn-heart{
+    color: #999999;
+    margin: 0px 4px;
+}
+.btn-retweet{
+    color: #999999;
+}
+.star{
+    margin-bottom: 6px;
+    color: yellow;
+}
+.price{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+ /*=============================================sale*/
+
+
+
+
+/*===============================================sản phẩm bán chạy*/
+.product-left .title-pro{
+    padding: 15px 0px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.product-left-ul{
+    padding: 0px;
+    /*border-top: 1px solid #F1F1F1;*/
+}
+.product-left-ul li a.img-left-pro{
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #F1F1F1;
+}
+.product-left-ul li a.img-left-pro img{
+    width: 85px;
+    height: 85px;
+
+}
+.product-left-ul li h3{
+    font-size: 14px;
+    margin: 7px 0px;
+}
+
+.product-left-ul li h3 a{
+    color: #000000;
+}
+.product-left-ul li .star{
+    margin: 0;
+}
+.price-new{
+    margin: 7px 0px;
+}
+/*===================================================đăng ký nhận tin*/
+.product-left .register{
+    background: #f85256;
+    border: 1px solid #f85256;
+    color: #FFFFFF;
+    border-radius: unset;
+}
+
+.product-left input{
+    border-radius: unset;
+}
+.product-left .register:hover{
+    background: #f85256;
+    color: #FFFFFF;
+}
+
+/*==========================================================sự kiện tin tức*/
+
+.item-new-ul{
+    padding: 0px;
+}
+.item-new-ul li a.img-news{
+    display: block;
+    position: relative;
+}
+.date{
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: auto;
+    top: 0;
+    right: 0;
+    background: #f85256;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.date span{
+    display: block;
+
+}
+.date span:first-child{
+    border-bottom: 1px solid #FFFFFF;
+}
+.item-new-ul li{
+    margin-bottom: 25px;
+}
+.item-new-ul li h3 a{
+    color: #000000;
+    font-size: 14px;
+    font-family: UVNHongHaHep;
+    font-weight: bold;
+}
+.item-new-ul li .description-news{
+    font-family: OpenSans-Light;
+    font-size: 12px;
+    color: #969696;
+}
+.item-new-ul li .description-news p{
+    text-align: justify;
+}
+.watch-more{
+    text-align: right;
+}
+.watch-more a{
+    color: #000000;
+    font-size: 13px;
+}
+
+/*=================================================khách hàng*/
+.customer-title{
+    position: relative;
+    font-size: 16px;
+    font-family: UVNHongHa_B;
+    text-transform: uppercase;
+    text-align: center;
+}
+.customer-title::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #F1F1F1;
+    left: 0;
+    top: 11px;
+}
+.customer-title span{
+    position: relative;
+    background: #FFFFFF;
+    padding: 0 10px;
+}
+.brand{
+   padding: 0 30px;
+    border-bottom: 1px solid #F1F1F1;
+    float: left;
+    width: 100%;
+}
+.brand .item{
+    height: 90px;
+    float: left;
+    width: 20%;
+    text-align: center;
+    line-height: 90px;
+    margin: 7px 0;
+}
+.brand .item a{
+    display: block;
+}
+.brand .item a img{
+    max-width: 100%;
+}
+
+/*=========================================================footer*/
+.footer-top{
+    height: 60px;
+    line-height: 60px;
+    background: #eeeeee;
+}
+.phone-ft{
+    margin-right: 20px;
+    font-weight: bold;
+    display: inline-block;
+
+}
+.phone-ft i{
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-right: 5px ;
+
+}
+/*.input-group{
+    width: auto;
+}*/
+.input-group input{
+    border-radius: unset;
+}
+.customer-btn{
+    border-radius: unset;
+    background: #f96a6e;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.customer-btn:hover{
+    background: #f96a6e;
+}
+
+.register-ft span{
+    font-family: UVNHongHa_B;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+.customer-ipgroup{
+    float: right;
+    width: calc(100% - 185px);
+    margin: 11px 0px;
+}
+
+
+/*====================================================footer-midd*/
+footer{
+    background: #444444;
+}
+.footer-midd{
+    background: #444444;
+}
+.list-item-ft{
+    clear: both;
+}
+.list-item-ft li{
+    float: left;
+    width: 20%;
+}
+
+.list-item-ft li .title-ft{
+    font-family: UVNHongHa_B;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.list-item-ft li .link a{
+    display: block;
+}

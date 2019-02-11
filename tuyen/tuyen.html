@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phung Motorbike</title>
+    <link rel=stylesheet href="https://inesn.me/css/include.main.css" type="text/css" />
+    <link rel=stylesheet href="https://inesn.me/css/jquery.ui.css" type="text/css" />
+    <link rel="icon" type="image/png"  href="https://vignette.wikia.nocookie.net/logopedia/images/f/f0/Washington_capitals_alternate_logo.gif/revision/latest?cb=20130929140614">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://inesn.me/js/jquery.main.isj"></script>
+    <script src="https://inesn.me/js/function.core.isj"></script>
+    <script src="https://inesn.me/js/jquery.migrate.isj"></script>
+    <script src="https://inesn.me/js/jquery.mobile.isj"></script>
+    <script src="https://inesn.me/js/jquery.ui.isj"></script>
+    <script src="https://inesn.me/js/function.main.isj"></script>
+    <script src="https://inesn.me/js/include.core.isj"></script>
+    <script src="https://inesn.me/js/function.ui.isj"></script>
+    <script src="https://inesn.me/js/jquery.ui.isj"></script>
+    <script src="https://inesn.me/js/lib.main.isj"></script>
+    <script src="https://inesn.me/js/function.sub.isj"></script>
+    <script src="https://inesn.me/js/function.access.isj"></script>
+    <script src="https://inesn.me/js/include.language.isj"></script>
+    <script src="https://inesn.me/js/include.template.isj"></script>
+    <script src="https://inesn.me/js/function.manage.isj"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+        th {
+            padding: 5px;
+            text-align: center;
+        }
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        .bgc2f{background-color: #292c2f;}
+        .bgclh:hover, .bgclo { background: orange; }
+        .grab { cursor: grab; }
+        .grabbing { cursor: grabbing; }
+        .cls { color: orange; }
+        .bcs { border-color: orange; }
+        .coi { color: orange !important; }
+        .ffu{font-family: "Univers45",sans-serif;}
+        .ls-02{letter-spacing: -.02em;}
+        .fs18p{font-size: 18px;}
+        .fs20p{font-size: 20px;}
+        .w99{width: 99%;}
+        .ls04{letter-spacing: 0.04em}
+        .bgcb1 {background-color: #0c2340}
+        .ff1{font-family: "Univers45",sans-serif;}
+        .lh50{line-height: 50px;}
+        .footer{height: 170px;}
+        .tsmnh:hover { text-shadow: 1px 1px 15px #fff; }
+        .h60{height:60px;}
+        .fw400{font-weight:200;}
+        .fs30{font-size:30px;}
+        .bgcf2{background-color:#f2f1f0;}
+        .bcf2{border-color:#f2f1f0;}
+        .wh213{width:200px;height:130px;}
+        .anh{height: calc(100% - 75px);}
+        .h75 { height: 75px ; }
+        .ff1 { font-family: "Univers45",sans-serif; font-size: 15px; }
+        .lh { line-height: 75px; }
+        .lh50 { line-height: 50px; }
+        .dpf { display: fixed; }
+        .h60 { height: 60px; }
+        .fw400 { font-weight :200;}
+        .fs30 { font-size: 30px; }
+        .bgcf2 { background-color: #f2f1f0; }
+        .bcf2 { border-color: #f2f1f0; }
+        .wh213 { width: 200px; height: 130px;}
+        .ls-02 { letter-spacing: -.02em;}
+        .fs18p { font-size: 18px; }
+        .fs20p { font-size: 20px; }
+        .w99 { width: 99%;}
+        .ls04 { letter-spacing: 0.04em; }
+        .bgcb1 { background-color: #0c2340; }
+        .w360 { top: 10%; left: 10%; }
+        .fs42 { font-size: 42px; letter-spacing: -.02em; font-family: "Univers47",sans-serif; font-weight: 400; line-height: 1.1; }
+        .fs2s { font-size: 20px; letter-spacing: -.02em; line-height: 1.4; margin-bottom: 6px; }
+        .rg { background: linear-gradient(135deg,rgba(0,0,0,.6),rgba(0,0,0,0) 50%); height: 100%; width: 100%; position: absolute; top: 0; left: 0; }
+        .w403 { width: 403px; top: 60px; left: 60px; }
+        .but { margin-top: 30px; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; line-height: 2; text-decoration: none; padding: 0 30px; color: black; background: white;border-radius: 2px;display: inline-block; text-align: center; font-weight: bold; }
+        .bgi { background: url("https://www.maserati.com/docroot/5.7.57/css/img/gradient_9_bottom.png") left top repeat-x; }
+        .cfh:hover { color: #fff; }
+        .bgcbdh:hover { background-color: darkblue; }
+        .bs3 { box-shadow: 0 0px 15px 0 #777;}
+        .bgc1{background-color: #f2f1f0;}
+        .bc1{border-color: #f2f1f0;}
+        .mt1{margin-top : 1px;}
+        .mt100{margin-top: 100px;}
+        .ff1{font-family: "Univers45",sans-serif;}
+        .lh50{line-height: 50px;}
+        .dpf{display: fixed;}
+        .footer{height: 170px;}
+        .clr {color: red;}
+        .bgc08 { background-color: rgba(0,0,0,0.8); }
+        .lh24 {line-height: 33px}
+        .fs25 {font-size: 15px}
+        .ls-02 {letter-spacing: normal;}
+        .wc05 {word-spacing: 5px}
+        .w215 { width: 400px; height: 300px; }
+        .bcrd { border-color: darkred; }
+        .pr5 {padding-right: 5%}
+        /*
+            comment CSS
+        */
+        .topnav {
+            height: 300px;
+            overflow: hidden;
+            background-color: white;
+            border-bottom: 2px solid #fff;
+            box-shadow: 0 4px 4px 0 #999;
+            position: fixed;
+            z-index: 5;
+            width:100%;
+            top:0;
+        }
+
+        .topnav a {
+            float: left;
+            display: flex;
+            color: black;
+            text-align: center;
+            /* padding: 14px 16px; */
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .menu-test{
+            display: flex;
+        }
+        .trái{
+            flex: 1;
+        }
+        .logo{
+            flex: 1;
+        }
+        .logo img{
+            height: 75px;
+        }
+        .phải{
+            flex: 1;
+        }
+        .phải #mncon-right{
+            float: right;
+        }
+        a{
+            padding: 0 20px;
+        }
+        #mncon-left{
+            margin-left: 50px;
+        }
+        #mncon-right{
+            position: relative;
+            margin-right: 50px;
+        }
+        .menu-test a:hover{
+            /*color: orange;*/
+        }
+        .btn-bars{
+            display: none;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 600px) {
+            .btn-bars{
+                display: inline-block;
+                padding: 8px 10px;
+                border-radius: 3px;
+                border: unset;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+            .logorespon{
+                display: inline-block;
+            }
+            .menu-test{
+                flex-direction: column;
+            }
+            .trái{
+                flex: 1;
+                order: 2;
+            }
+            #mncon-left{
+                margin-left: 0px;
+            }
+            #mncon-right{
+                margin-right: 0px;
+            }
+            #logo{
+                display: none;
+                flex: 1;
+                order: 1;
+                background: none;
+            }
+            .phải{
+                flex: 1;
+                order: 3;
+            }
+            #mncon-left{
+                display: flex;
+                flex-direction: column;
+            }
+            #mncon-right{
+                display: flex;
+                flex-direction: column;
+            }
+            #home{
+                display: flex;
+                flex: 1;
+                order: 1;
+                float: left;
+                font-weight: bold;
+            }
+            #for-rent{
+                display: flex;
+                flex: 1;
+                order: 2;
+                float: left;
+                font-weight: bold;
+            }
+            #for-sale{
+                display: flex;
+                flex: 1;
+                order: 3;
+                float: left;
+                font-weight: bold;
+            }
+            #information{
+                display: flex;
+                flex: 1;
+                order: 1;
+                float: left;
+                font-weight: bold;
+            }
+            #contact{
+                display: flex;
+                flex: 1;
+                order: 2;
+                float: left;
+                font-weight: bold;
+                border-bottom: none;
+            }
+            .bd-bt{
+                margin: 0px 15px;
+                border-bottom: 1px solid #CCCCCC !important;
+                padding: 0px 16px;
+                border-radius: 5px;
+                line-height: 45px;
+
+            }
+            .phải #mncon-right{
+                float: none;
+            }
+            .active{
+                display: block;
+            }
+            .main-mn{
+                display: none;
+            }
+            .nav-expanded{
+                display: block;
+            }
+        }
+
+
+        #mn-content{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background: red;
+            top: 75px;
+        }
+        #atricle{
+            flex: 1;
+            order: 1;
+        }
+        moto-tip{
+            flex: 1;
+            order: 2;
+        }
+        #mn-lv2{
+            display: block;
+        }
+
+        #information:hover{
+            background: red;
+        }
+    </style>
+</head>
+<body class="ff1" style="background-color: #f2f1f0;">
+<div class="topnav" id="myTopnav" style="background-color: #292c2f;">
+    <div id="mnres" class="grid cb">
+        <div class="w20 fl pr z99">
+            <button class="btn-bars">
+                <i class="fa fa-bars menu"></i>
+            </button>
+        </div><a class="logorespon dib pa w1" style="display: none;" href="/home">
+        <img src="images/logo.png" class="mlra" style="width: 50px; height: 50px;">
+    </a>
+    </div>
+
+    <div class="main-mn">
+        <div class="menu-test wh1 pr pb10" style="background-color: #292c2f; ">
+            <div class="h1 lh fl trái" id="menu-trái"></div>
+            <div id="logo">
+                <div class=" bấmĐc wh1 tac">
+                    <!-- https://image.flaticon.com/icons/svg/89/89151.svg -->
+                    <img src="https://cdn.inevn.com/img/thumb/20034.1kx.isij" style="width: 75px;">
+                </div>
+            </div>
+            <div class="h1 lh fr phải" id="menu-phải"></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var linkContact = "",
+        rManual= [],
+        rAutomatic= [],
+        rSautomatic= [];
+
+    $(function(){
+
+
+
+        // $(document).on("click","#Size",function(){
+        // 	var t = $(this);
+        // 	$("#C,#E").slideUp("slow");
+        // 	$("#S").slideToggle("slow");
+        // });
+        // $(document).on("click","#Chassis",function(){
+        // 	$("#S,#E").slideUp("slow");
+        // 	$("#C").slideToggle("slow");
+        // });
+        // $(document).on("click","#Engine",function(){
+        // 	$("#C,#S").slideUp("slow");
+        // 	$("#E").slideToggle("slow");
+        // });
+
+
+        $("#menu-trái").append(
+            $("<div>",{ id:"mncon-left"}).append(
+                [
+                    ["Home","/home","home"],
+                    ["For Rent","/Rent","for-rent"],
+                    ["For Sale","/Sale","for-sale"],
+                ].map(function(v){
+                    return $("<a>",{class:"dib bấmĐc bd-bt coi tsmnh", text:v[0], id : v[2], href:v[1]})
+                }),
+            ),
+        );
+
+        $("#menu-phải").append(
+            $("<div>",{ id: "mncon-right" }).append(
+                [
+                    ["Information","/Information","information"],
+                    ["Contact","/Contact","contact"]
+                ].map(function(v){
+                    return $("<a>",{ class:" dib bấmĐc bd-bt coi tsmnh", text:v[0],id:v[2], href:v[1] })
+                }),
+            )
+        );
+
+/* ====================================menu cấp 2*/
+        $("#mncon-right").append(
+            $("<div>",{ id: "mn-lv2" }).append(
+            $("<div>",{ id: "mn-content" }).append(
+                [
+                    ["Atricle ","/Atricle ","atricle "],
+                    ["Moto tip","/Moto-tip","moto-tip"]
+                ].map(function(v){
+                    return $("<a>",{ class:"", text:v[0],id:v[2], href:v[1] })
+                }),
+            )
+            )
+        );
+
+
+/*end*/
+
+        $(".btn-bars").khóa("click",function(){
+            $(".main-mn").slideToggle(400, function() {
+                $(this).toggleClass("nav-expanded");
+                $(this).on("click",function(){
+                    $(this).slideUp();
+                });
+            });
+        },1000)
+
+        if($(document).width() < 500){
+            $(".logorespon").removeAttr("style");
+            $("#bọc").css({
+                marginTop: $(".topnav").height()+"px",
+            })
+        }
+
+
+        $("#input").append(
+            $("<input>",{ class:"ptb10", placeholder:"Search in the Maserati World" }).iInput({
+                bo:"mb10,w50",
+                icon:"search",
+            }),
+        );
+        $(".pmtb").on("click",function(){
+            var w;
+            khung(
+                w = $("<div>",{ class:"wh1 c0 tac bgco ptb15"}).append(
+                    $("<div>",{ class:"ptb10 fs2", text:"Login"}),
+                    $("<input>",{ class:"user ptb10", placeholder:"Username" }).iInput({
+                        bo:"mtb15,w90,mlra",
+                        icon:"person",
+                    }),
+                    $("<input>",{ class:"pass ptb10", placeholder:"Password" }).iInput({
+                        bo:"mtb15,w90,mlra",
+                        icon:"lock",
+                    }),
+                    $("<div>",{ class:"hiện ptb5 cr1"}),
+                    $("<div>",{ class:"ptb10 plr15 bgcf bss bw1 bra5 bcf btn dib", text:"Login"}).on("click",function(){
+                        var username = $(".user").val(),
+                            password = $(".pass").val();
+                        if ( !username && !password){
+                            $(".hiện").text("Không được bỏ trống username & password");
+                        } else {
+                            $.post("/process.php",{ action:"login", username:username, password:password},function(status){
+                                if(status==1) {
+                                    $("#khungThôngBáo").remove();
+                                    location.reload();
+                                    alert("Đăng nhập thành công! Xin chào "+$.cookie("username"));
+                                } else {
+                                    $(".hiện").text("Sai tên tài khoản hoặc mật khẩu!");
+                                }
+                            })
+                        }
+                    }),
+                ),
+                {
+                    thanh:false,
+                    trong:"col-md-4,col-xs-8",
+                    chứa:"h1,col-md-12,col-xs-12",
+                    inĐc:false,
+                    phóngĐc:false,
+                    koMờ:true
+                }
+            )
+        })
+    });
+</script>
+
+</body>
+</html>
